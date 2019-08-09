@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context=".DetailMenu"
+        tools:showIn="@layout/activity_detail_menu">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY"
+                    android:contentDescription="@string/app_name"
+                    android:id="@+id/item_photo"
+                    android:src="@drawable/pixel_google"/>
+
+            <TextView
+                    android:id="@+id/item_photo_qty"
+                    style="@style/TextContent.Small.White"
+                    android:layout_gravity="bottom"
+                    android:layout_marginStart="@dimen/activity_horizontal_margin"
+                    android:layout_marginBottom="@dimen/activity_vertical_margin"
+                    android:background="#4D000000"
+                    android:drawableStart="@drawable/logo"
+                    android:drawablePadding="1dp"
+                    android:gravity="center_vertical"
+                    android:padding="2dp"
+                    android:text="@string/dummy_photos"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:textColor="@android:color/white" android:layout_height="wrap_content"
+                    android:textSize="24sp"/>
+
+        </FrameLayout>
+
+        <TextView
+                android:id="@+id/item_name"
+                style="@style/TextContent.Black"
+                android:textSize="32sp"
+                android:text="@string/dummy_value"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:layout_marginBottom="8dp"/>
+
+<!--
+        <TextView
+                android:id="@+id/item_category"
+                style="@style/TextContent.Subtitle"
+                android:text="@string/stock"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"/>
+-->
+        <TextView
+                android:id="@+id/item_description"
+                style="@style/TextContent"
+                android:text="@string/content_text"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:lineSpacingMultiplier="1"
+                android:textColor="@android:color/black"/>
+
+
+        <TextView
+                style="@style/TextContent.Subtitle"
+                android:text="@string/detail"
+                android:layout_marginBottom="8dp"/>
+
+        <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_marginBottom="@dimen/activity_vertical_margin">
+
+            <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp">
+                <TextView
+
+                        style="@style/TextSpec.Field"
+                        android:text="@string/price"/>
+                <TextView
+                        android:id="@+id/item_price"
+                        style="@style/TextSpec.Value"
+                        android:text="@string/content_specs_display"/>
+            </TableRow>
+
+            <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp">
+                <TextView
+                        style="@style/TextSpec.Field"
+                        android:text="@string/composition"/>
+                <TextView
+                        android:id="@+id/item_receip"
+                        style="@style/TextSpec.Value"
+                        android:text="@string/content_specs_composition"/>
+            </TableRow>
+
+
+        </TableLayout>
+
+
+        <TextView
+                style="@style/TextContent.Subtitle"
+                android:text="@string/seller"
+                android:layout_marginBottom="8dp"/>
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_marginBottom="@dimen/activity_vertical_margin">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:src="@drawable/photo"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/profile_image"
+                    android:layout_marginEnd="@dimen/activity_horizontal_margin"/>
+
+            <TextView
+                    android:id="@+id/my_name"
+                    style="@style/TextContent"
+                    android:layout_toEndOf="@id/profile_image"
+                    android:text="@string/my_name"
+                    android:textColor="@android:color/black"/>
+
+            <TextView
+                    android:id="@+id/my_email"
+                    style="@style/TextContent"
+                    android:layout_toEndOf="@id/profile_image"
+                    android:text="@string/my_email"
+                    android:textColor="@android:color/black" android:layout_below="@id/my_name"/>
+        </RelativeLayout>
+
+        <Button
+                android:id="@+id/btn_buy"
+                style="@style/ButtonGeneral"
+                android:text="@string/order"/>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

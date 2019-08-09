@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">SubmissionDicoding</string>
+    <string name="menu">Menu</string>
+    <string name="pizza_hut">Pizza Hut</string>
+    <string name="menu_pizza">Menu Pizza</string>
+    <string name="pizza_name">Nama Pizza</string>
+    <string name="detail_menu">Detail Menu</string>
+    <string name="from">Asal</string>
+    <string name="list">List</string>
+    <string name="grid">Grid</string>
+    <string name="with_cardview">with CardView</string>
+    <string name="description">deskripsi</string>
+    <string name="price">price</string>
+    <string name="favorite">Favorite</string>
+    <string name="share">Share</string>
+    <string name="profil">Profile</string>
+    <string name="filter">Filter</string>
+
+    <string name="pizza">Pizza</string>
+    <string name="pasta">Pasta</string>
+    <string name="rice">Rice</string>
+    <string name="drink">Drink</string>
+
+    <string name="content_text">Google officially announced its much-anticipated Pixel phones; the Pixel and Pixel XL,
+        on October 4. We attended Google’s London UK event, mirroring the main one taking place in San Francisco, US,
+        where the firm unwrapped the new Android 7.1 Nougat devices which will apparently usurp Google’s long-standing
+        Nexus series.
+    </string>
+    <string name="content_specs_display">5.0 inches\n
+        FHD AMOLED at 441ppi\n
+        2.5D Corning® Gorilla® Glass 4
+    </string>
+    <string name="content_specs_composition">5.6 x 2.7 x 0.2 ~ 0.3 inches 143.8 x 69.5 x 7.3 ~ 8.5 mm</string>
+
+    <string name="dummy_photos">6 Photos</string>
+    <string name="dummy_value">$735</string>
+    <string name="stock">Stock hanya 5 buah</string>
+    <string name="detail">Detail.</string>
+    <string name="composition">Composition</string>
+    <string name="seller">Chef.</string>
+    <string name="my_name">Dian Tri Budianto</string>
+    <string name="my_email">dian.trib@gmail.com</string>
+    <string name="order">Order</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="dicodingSubmission">Submission Dicoding Android</string>
+
+</resources>

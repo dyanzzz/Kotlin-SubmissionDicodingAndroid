@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <RelativeLayout
+            android:id="@+id/relative_pizza"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/activity_vertical_margin"
+            android:background="@android:drawable/editbox_background_normal">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/img_item_pizza"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                android:src="@drawable/pizza"/>
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@id/img_item_pizza"
+                android:orientation="vertical">
+            <TextView
+                    android:id="@+id/tv_item_pizza"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:text="@string/pizza"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:id="@+id/relative_pasta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/activity_vertical_margin"
+            android:background="@android:drawable/editbox_background_normal">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/img_item_pasta"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                android:src="@drawable/pasta"/>
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@id/img_item_pasta"
+                android:orientation="vertical">
+            <TextView
+                    android:id="@+id/tv_item_pasta"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:text="@string/pasta"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:id="@+id/relative_rice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/activity_vertical_margin"
+            android:background="@android:drawable/editbox_background_normal">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/img_item_rice"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                android:src="@drawable/rice"/>
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@id/img_item_rice"
+                android:orientation="vertical">
+            <TextView
+                    android:id="@+id/tv_item_rice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:text="@string/rice"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:id="@+id/relative_drink"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/activity_vertical_margin"
+            android:background="@android:drawable/editbox_background_normal">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/img_item_drink"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                android:src="@drawable/drink"/>
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@id/img_item_drink"
+                android:orientation="vertical">
+            <TextView
+                    android:id="@+id/tv_item_drink"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:text="@string/drink"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>
+
+        <!--
+        <androidx.drawerlayout.widget.DrawerLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/drawer_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".MainActivity">
+
+
+
+            <include
+                    layout="@layout/app_bar_main"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+            <com.google.android.material.navigation.NavigationView
+                    android:id="@+id/nav_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:fitsSystemWindows="true"
+                    app:headerLayout="@layout/layout_header"
+                    app:menu="@menu/menu_main"/>
+
+        </androidx.drawerlayout.widget.DrawerLayout>
+        -->
